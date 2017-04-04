@@ -11,6 +11,8 @@ app.get("/about", function(req, res){
     res.render("about");
 });
 
-
+app.get("/videos", function(req, res){
+    res.render("videos");
+})
 
 app.listen(process.env.PORT, process.env.IP);
