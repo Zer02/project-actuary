@@ -5,7 +5,7 @@ app.set("view engine", "ejs");
 
 app.get("/", function(req, res){
     res.redirect("videos");
-});
+})
 
 app.get("/articles", function(req, res){
     res.render("articles");
@@ -17,6 +17,10 @@ app.get("/videos", function(req, res){
 
 app.get("/fitness", function(req, res){
     res.render("fitness");
+})
+
+app.get("/cart", function(req, res){
+    res.render("cart");
 })
 
 app.listen(process.env.PORT, process.env.IP);
