@@ -3,12 +3,14 @@ var app = express();
 
 app.set("view engine", "ejs");
 
+app.use(express.static("public"));
+
 app.get("/", function(req, res){
     res.redirect("videos");
 });
 
-app.get("/about", function(req, res){
-    res.render("about");
+app.get("/articles", function(req, res){
+    res.render("articles");
 });
 
 app.get("/videos", function(req, res){
