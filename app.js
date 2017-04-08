@@ -7,8 +7,8 @@ app.get("/", function(req, res){
     res.render("home");
 })
 
-app.get("/articles", function(req, res){
-    res.render("articles");
+app.get("/startups", function(req, res){
+    res.render("startups");
 });
 
 app.get("/videos", function(req, res){
