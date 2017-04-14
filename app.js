@@ -23,4 +23,29 @@ app.get("/cart", function(req, res){
     res.render("cart");
 })
 
+app.get("/entrepreneurs", function(req, res) {
+    res.render("entrepreneurs");
+})
+
+app.get("/blog", function(req, res) {
+    res.render("blog");
+})
+
+app.get("/lolanalytics", function(req, res) {
+    res.render("lolanalytics");
+})
+
+// Hidden Routes
+app.get("/taxes", function(req, res){
+    res.render("taxes");
+})
+
+app.get("/jobs", function(req, res){
+    res.render("jobs");
+})
+
+app.get("/dev", function(req, res){
+    res.render("dev");
+})
+
 app.listen(process.env.PORT, process.env.IP);
