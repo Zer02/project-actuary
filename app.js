@@ -31,9 +31,10 @@ app.get("/blog", function(req, res) {
     res.render("blog");
 })
 
-app.get("/lolanalytics", function(req, res) {
-    res.render("lolanalytics");
+app.get("/tennis", function(req, res) {
+    res.render("tennis");
 })
+
 
 // Hidden Routes
 app.get("/taxes", function(req, res){
